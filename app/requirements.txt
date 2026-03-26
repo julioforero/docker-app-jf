@@ -1,0 +1,4 @@
+flask
+google-cloud-firestore
+pandas
+gunicorn
