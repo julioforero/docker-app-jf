@@ -10,3 +10,9 @@
 ## Cómo ejecutar el contenedor localmente
 1. `docker build -t app-transporte .`
 2. `docker run -p 8080:8080 app-transporte`
+
+
+## Comandos usados para subir a Google Cloud
+
+1. `gcloud builds submit --tag gcr.io/dev-gcp-qa/app-transporte --project=dev-gcp-qa .`
+1. `gcloud run deploy app-transporte --image gcr.io/dev-gcp-qa/app-transporte --region us-east1 --project=dev-gcp-qa`
